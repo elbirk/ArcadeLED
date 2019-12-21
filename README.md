@@ -18,8 +18,8 @@ copy ArcadeLED forlder to RetroPie
 copy runcommand-onstart.sh and runcommand-onend.sh to /opt/retropie/configs/all
 
 
-Run on Raspberry PI:
-sudo apt-get install python3 (Installs Python 3)
+Run on Raspberry PI:  
+sudo apt-get install python3 (Installs Python 3)  
 sudo apt-get install rpi.gpio (installs rpi.gpio, used for controlling GPIO ports)
 
 
