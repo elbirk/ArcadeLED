@@ -17,3 +17,6 @@ the script runcommand-onend.sh -r OFF
 copy ArcadeLED forlder to RetroPie
 copy runcommand-onstart.sh and runcommand-onend.sh to /opt/retropie/configs/all
 
+Because you cannot run the buttons direct from Raspberry PI, you ned at Darlington Transistor Array.
+I uses 2 pices of ULN2803A boards. 
+https://www.ebay.com/itm/ULN2803A-Darlington-Tube-High-Pressure-Large-Current-Drive/112571472802?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649
