@@ -26,3 +26,6 @@ sudo apt-get install rpi.gpio (installs rpi.gpio, used for controlling GPIO port
 Because you cannot run the buttons direct from Raspberry PI, you ned at Darlington Transistor Array.  
 I uses 2 pices of ULN2803A boards.  
 https://www.ebay.com/itm/ULN2803A-Darlington-Tube-High-Pressure-Large-Current-Drive/112571472802?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649  
+
+Have ordered WS2812 addressable LED.  
+When I receive them, I want to add support for them so the buttons can change color by game.  
