@@ -14,7 +14,7 @@ Calling ArcadeLED.py -r bombjack turn on alle buttons used by Bomb Jack
 the script runcommand-onstart.sh is called from RetroPie and calls ArcadeLED.py -r romname called.  
 the script runcommand-onend.sh -r OFF  
 
-copy ArcadeLED forlder to RetroPie  
+copy ArcadeLED folder to RetroPie  
 copy runcommand-onstart.sh and runcommand-onend.sh to /opt/retropie/configs/all  
 
 
