@@ -18,9 +18,11 @@ copy ArcadeLED folder to RetroPie
 copy runcommand-onstart.sh and runcommand-onend.sh to /opt/retropie/configs/all  
 
 
-Run on Raspberry PI:  
-sudo apt-get install python3 (Installs Python 3)  
-sudo apt-get install rpi.gpio (installs rpi.gpio, used for controlling GPIO ports)  
+Run on Raspberry PI(Retropie-Buster):  
+sudo apt-get install python3 
+sudo apt install python3-pip
+pip3 install RPI.GPIO
+pip3 install adafruit-blinka
 
 
 Because you cannot run the buttons direct from Raspberry PI, you ned at Darlington Transistor Array.  
