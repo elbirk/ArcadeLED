@@ -19,7 +19,7 @@ copy runcommand-onstart.sh and runcommand-onend.sh to /opt/retropie/configs/all
 
 
 Run on Raspberry PI(Retropie-Buster):  
-sudo apt-get install python3 
+sudo apt-get install python3  
 sudo apt install python3-pip  
 sudo pip3 install RPI.GPIO  
 sudo pip3 install rpi_ws281x adafruit-circuitpython-neopixel  
