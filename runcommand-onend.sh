@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
-# Turn on all LED.
-python3 /home/pi/RetroPie/ArcadeLED/ArcadeLED.py -r "OFF"
+# Turn off all neopixel.
+sudo python3 /home/pi/RetroPie/ArcadeLED/ArcadeLED.py -m neopixel
 
+# Turn off all LED.
+#sudo python3 /home/pi/RetroPie/ArcadeLED/ArcadeLED.py -r OFF
