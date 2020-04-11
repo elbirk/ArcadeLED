@@ -1,37 +1,29 @@
-# ArcadeLED
-Retropie python3 script for rom specific button light on Raspberry PI and RetroPie.  
+# ArcadeLED Normal led or neopixel
+Retropie python3 script for rom specific button light on Raspberry PI and RetroPie.
+Python3 script that reads Colors.ini and turn on the game specific buttons launching a game.
 
-Python3 script that reads Colors.ini and turn on the GPIO pins of Raspberry PI, when the specific games is launched.  
-The Colors.ini file includes many MAME games, made by Kevin Jonas (SirPoonga) http://controls.arcadecontrols.com/  
+The Colors.ini file includes many MAME games, made by Kevin Jonas (SirPoonga) http://controls.arcadecontrols.com/
+To change the GPIO pin numbers and Arcade buttons in your cabinet, edit ArcadeLED.py
+Normal LED buttons parameters:
+python3 ArcadeLED.py -r bombjack
+Neopixel LED buttons parameters:
+python3 ArcadeLED.py -m neopixel -r bombjack
 
-To change the GPIO pin numbers and Arcade buttons in you cabinet, edit ArcadeLED.py  
+Installaton
+copy ArcadeLED folder to /home/pi/RetroPie
+copy runcommand-onstart.sh and runcommand-onend.sh to /opt/retropie/configs/all
+Edit runcommand-onstart.sh and runcommand-onend.sh for your configuration
 
-Without parameter ArcadeLED will turn on all your led buttons.  
-Calling ArcadeLED.py without parameter, turns on all led buttons  
-Calling ArcadeLED.py -r OFF, turns off alle led buttons  
-Calling ArcadeLED.py -r bombjack turn on alle buttons used by Bomb Jack  
+Run on Raspberry PI(Retropie-Buster):
+sudo apt-get install python3
+sudo apt install python3-pip
+sudo pip3 install RPI.GPIO
+sudo pip3 install rpi_ws281x adafruit-circuitpython-neopixel
 
-the script runcommand-onstart.sh is called from RetroPie and calls ArcadeLED.py -r romname called.  
-the script runcommand-onend.sh -r OFF  
+Neopixel can be connected direct to Raspberry PI.
+Normal LED you can use a Darlington Transistor Array to connect the Leds.
 
-copy ArcadeLED folder to RetroPie  
-copy runcommand-onstart.sh and runcommand-onend.sh to /opt/retropie/configs/all  
-
-
-Run on Raspberry PI(Retropie-Buster):  
-sudo apt-get install python3  
-sudo apt install python3-pip  
-sudo pip3 install RPI.GPIO  
-sudo pip3 install rpi_ws281x adafruit-circuitpython-neopixel  
+I uses 2 pices of ULN2803A boards.
+https://www.ebay.com/itm/ULN2803A-Darlington-Tube-High-Pressure-Large-Current-Drive/112571472802?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649
 
 
-Because you cannot run the buttons direct from Raspberry PI, you ned at Darlington Transistor Array.  
-I uses 2 pices of ULN2803A boards.  
-https://www.ebay.com/itm/ULN2803A-Darlington-Tube-High-Pressure-Large-Current-Drive/112571472802?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649  
-
-Have ordered WS2812 addressable LED.  
-When I receive them, I want to add support for them so the buttons can change color by game.
-
-ArcadeLED neopixel, is for buttons with neopixel LED, reads the color for the different buttons from the Colors.ini file.  
-ArcadeLED neopixel is a beta version, and you have to install: sudo pip3 install adafruit-circuitpython-neopixel  
- 
