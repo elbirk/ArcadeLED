@@ -25,5 +25,7 @@ Normal LED you can use a Darlington Transistor Array to connect the Leds.
   
 I uses 2 pices of ULN2803A boards.  
 https://www.ebay.com/itm/ULN2803A-Darlington-Tube-High-Pressure-Large-Current-Drive/112571472802?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649  
+  
+When using neopixel, you cannot use the Raspberry Pi internal soundcard
 
 
